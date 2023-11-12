@@ -15,7 +15,7 @@ public class GroundMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.position += new Vector3(0, 0, -1 * speed);
+        gameObject.transform.position += new Vector3(0, 0, -1 * speed * Time.deltaTime);
         
         if(gameObject.transform.position.z < -7.6) //brute force!!!!
         {
